@@ -1,6 +1,3 @@
-[![Build Status](https://travis-ci.org/dprgarner/tech-radar-generator.svg?branch=master)](https://travis-ci.org/dprgarner/tech-radar-generator)
-[![npm](https://img.shields.io/npm/v/tech-radar-generator)](http://npmjs.com/package/tech-radar-generator)
-
 # Tech Radar Generator
 
 A library for creating a [ThoughtWorks Tech Radar][radar] as a static site. This project was forked from the [ThoughtWorks Build-Your-Own-Radar][byor] app, but modified for distribution as a reusable package.
