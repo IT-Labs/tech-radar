@@ -1,0 +1,35 @@
+{
+  "title": "IT Labs Technology Radar",
+  "quadrants": ["Quad1", "Quad2", "Quad3", "Quad4"],
+  "rings": ["adopt", "trial", "assess", "hold"],
+  "blips": [
+    {
+      "name": "Go",
+      "quadrant": "Quad2",
+      "ring": "trial",
+      "isNew": true,
+      "description": "This is a simple description"
+    },
+    {
+      "name": "JavaScript",
+      "quadrant": "Quad1",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "<p>This is a description</p><p>Formatted into paragraphs</p>"
+    },
+    {
+      "name": "Java",
+      "quadrant": "Quad3",
+      "ring": "assess",
+      "isNew": false,
+      "description": "This is a <a href=\"/\">description</a><br /><br />Spanning several lines."
+    },
+    {
+      "name": "C++",
+      "quadrant": "Quad4",
+      "ring": "hold",
+      "isNew": false,
+      "description": "This is another simple description"
+    }
+  ]
+}

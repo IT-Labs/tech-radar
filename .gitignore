@@ -1,0 +1,13 @@
+node_modules
+dist
+*.swa
+*.swp
+*.swo
+
+coverage/
+
+.idea/
+.DS_Store
+
+.env
+.vscode
