@@ -85,7 +85,7 @@
       "quadrant": "Techniques",
       "ring": "assess",
       "isNew": true,
-      "description": "Deep Learning is a subfield of machine learning concerned with algorithms inspired by the structure and function of the brain called artificial neural networks. It's a technique that teaches computers to do what comes naturally to humans: learn by example. <br><br> We are planning to visit Deep Learning Specialization course on Coursera starting from February 2022. This is best course to learn, it is self-paced and anyone should feel free to join on this journey. Additionally, ML internship has begin in January 2022 and the plan is to continue investing in Ai and building an AI team within the company. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://machinelearningmastery.com/what-is-deep-learning/\">What is deep learning?</a></li><li><a href=\"https://www.coursera.org/specializations/deep-learning\">Deep learning specialization</a></li></ul><br><br> <b>People references:</b> <br> Kostadin Kadiev <br> Vlatko Zmejkoski <br> Martin Trajkov"
+      "description": "Deep Learning is a subfield of machine learning concerned with algorithms inspired by the structure and function of the brain called artificial neural networks. It's a technique that teaches computers to do what comes naturally to humans: learn by example. <br><br> We are planning to visit Deep Learning Specialization course on Coursera starting from February 2022. This is best course to learn, it is self-paced and anyone should feel free to join on this journey. Additionally, ML internship has begun in January 2022 and the plan is to continue investing in Ai and building an AI team within the company. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://machinelearningmastery.com/what-is-deep-learning/\">What is deep learning?</a></li><li><a href=\"https://www.coursera.org/specializations/deep-learning\">Deep learning specialization</a></li></ul><br><br> <b>People references:</b> <br> Kostadin Kadiev <br> Vlatko Zmejkoski <br> Martin Trajkov"
     },
 
     {
@@ -184,7 +184,7 @@
       "quadrant": "Platforms",
       "ring": "trial",
       "isNew": true,
-      "description": "Azure Logic Apps is a cloud-based platform for creating and running automated workflows that integrate your apps, data, services, and systems. With this platform, you can quickly develop highly scalable integration solutions for your enterprise and business-to-business (B2B) scenarios. <br><br> We're currently working with Logic Apps on one of our projects. It helps to coordinate the flow of data through disparate systems. Logic Apps works best when you’re integrating multiple services with some added control logic. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.serverless360.com/azure-logic-apps\">Azure Logic Apps Ultimate Guide</a></li></ul><br><br> <b>People references:</b> <br> Zoran Petrushev <br> Kostadin Kadiev"
+      "description": "Azure Logic Apps is a cloud-based platform for creating and running automated workflows that integrate your apps, data, services, and systems. With this platform, you can quickly develop highly scalable integration solutions for your enterprise and business-to-business (B2B) scenarios. <br><br> We're currently working with Logic Apps on one of our projects. It helps to coordinate the flow of data through disparate systems. Logic Apps works best when you are integrating multiple services with some added control logic. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.serverless360.com/azure-logic-apps\">Azure Logic Apps Ultimate Guide</a></li></ul><br><br> <b>People references:</b> <br> Zoran Petrushev <br> Kostadin Kadiev"
     },
     {
       "name": "AWS Cognito",
@@ -198,7 +198,7 @@
       "quadrant": "Platforms",
       "ring": "trial",
       "isNew": false,
-      "description": "DynamoDB is a key-value and document database with single-digit millisecond response times at any scale. It’s a fully managed durable database with built-in security, backup, and restore capabilities. <br><br> We've used DynamoDB on one project and it offers a lot of benefits. However, we should be careful with the cost and the weak querying model. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://dashbird.io/blog/ultimate-guide-to-aws-dynamodb/\">AWS DynamoDB Ultimate Guide</a></li></ul><br><br> <b>People references:</b> <br> Miki Jovanovski <br> Voislav Mishevski"
+      "description": "DynamoDB is a key-value and document database with single-digit millisecond response times at any scale. Its a fully managed durable database with built-in security, backup, and restore capabilities. <br><br> We've used DynamoDB on one project and it offers a lot of benefits. However, we should be careful with the cost and the weak querying model. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://dashbird.io/blog/ultimate-guide-to-aws-dynamodb/\">AWS DynamoDB Ultimate Guide</a></li></ul><br><br> <b>People references:</b> <br> Miki Jovanovski <br> Voislav Mishevski"
     },
     {
       "name": "AWS API Gateway",
@@ -249,20 +249,322 @@
       "isNew": false,
       "description": "Ethereum is open source and used primarily to support the second-largest cryptocurrency in the world known as Ether. Ethereum enables the smart contracts and applications built on its blockchain to run smoothly without fraud, downtime, control, or any third-party interference. <br><br> We've used Etherium on one of our projects successfully. The platform has a lot of potential and community and they are constantly trying to solve the blockchain scalability & cost issues. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.leewayhertz.com/what-is-ethereum-blockchain/\">What is Etherium blockchain?</a></li><li><a href=\"https://www.it-labs.com/portfolio/caerus-connections/\">Caerus Connections Portfolio</a></li></ul><br><br> <b>People references:</b> <br> Aleksandra Gjinovska"
     },
-
     {
-      "name": "Java",
-      "quadrant": "Tools",
+      "name": "GitHub Actions",
+      "quadrant": "Platforms",
       "ring": "assess",
-      "isNew": false,
-      "description": "This is a <a href=\"/\">description</a><br /><br />Spanning several lines."
+      "isNew": true,
+      "description": "GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline. You can create workflows that build and test every pull request to your repository, or deploy merged pull requests to production. <br><br> We've used briefly GitHub Action as part of a DevOps Community project and the results were encouraging - it is an easy to use platform. However, since it is still maturing, we've lacked some out-of-the-box tasks for certain actions. We need to further explore this platform, especially for pet projects or POC projects. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions\">Understanding GitHub Actions</a></li></ul><br><br> <b>People references:</b> <br> Blagoja Panovski"
     },
     {
-      "name": "C++",
-      "quadrant": "Languages and Frameworks",
-      "ring": "hold",
+      "name": "Microsoft Power Platform",
+      "quadrant": "Platforms",
+      "ring": "assess",
+      "isNew": true,
+      "description": "Microsoft Power Platform is a group of products offered by Microsoft to develop and build complex business solutions, analyze, and draw data visualizations, automate a business process, or build virtual agents for communication. All these products offer a platform in which no code is required to build the applications. <br><br> We've used Power Platform in the past for internal purposes (Leave Requests) and there is a potential to work on this more in near future. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.formuspro.com/resources/news/what-is-microsoft-power-platform/\">What is Microsoft Power Platform?</a></li></ul><br><br> <b>People references:</b> <br> Blagoja Panovski"
+    },
+    {
+      "name": "Azure Site Recovery",
+      "quadrant": "Platforms",
+      "ring": "assess",
       "isNew": false,
-      "description": "This is another simple description"
+      "description": "Site Recovery helps ensure business continuity by keeping business apps and workloads running during outages. Site Recovery replicates workloads running on physical and virtual machines (VMs) from a primary site to a secondary location. When an outage occurs at your primary site, you fail over to secondary location, and access apps from there. After the primary location is running again, you can fail back to it. <br><br> We've used Site Recovery for migration of infrastructure from on-premise to Cloud successfully. We also recommend to explore the Disaster Recovery Scenarios in order to have more knowledge of this service. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://cloud.netapp.com/blog/asr-migration-draas-solution\">ASR migration</a></li></ul><br><br> <b>People references:</b> <br> Blagoja Panovski <br> Kostadin Kadiev"
+    },
+    {
+      "name": "Azure IoT Hub",
+      "quadrant": "Platforms",
+      "ring": "assess",
+      "isNew": true,
+      "description": "IoT Hub is a managed service hosted in the cloud that acts as a central message hub for communication between an IoT application and its attached devices. You can connect millions of devices and their backend solutions reliably and securely. Almost any device can be connected to an IoT Hub. <br><br> We've worked on end-2-end scenario as POC for a potential client and we're planning on continuing to build this scenario with devices in our MK office. More information on the link below. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://docs.microsoft.com/en-us/azure/iot-hub/iot-concepts-and-iot-hub\">IoT concepts and IoT Hub</a></li><li><a href=\"https://docs.microsoft.com/en-us/azure/digital-twins/how-to-integrate-maps\">E2E Azure IoT Hub, Digital Twins and Indoor Map</a></li></ul><br><br> <b>People references:</b> <br> Blagoja Panovski <br> Kiril Todorovski"
+    },
+    {
+      "name": "Azure Digital Twins",
+      "quadrant": "Platforms",
+      "ring": "assess",
+      "isNew": true,
+      "description": "Azure Digital Twins is a platform as a service (PaaS) offering that enables the creation of twin graphs based on digital models of entire environments, which could be buildings, factories, farms, energy networks, railways, stadiums, and more—even entire cities. These digital models can be used to gain insights that drive better products, optimized operations, reduced costs, and breakthrough customer experiences. <br><br> We've worked on end-2-end scenario as POC for a potential client and we're planning on continuing to build this scenario with devices in our MK office. More information on the link below. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://docs.microsoft.com/en-us/azure/digital-twins/overview\">Digital Twins Overview</a></li><li><a href=\"https://docs.microsoft.com/en-us/azure/digital-twins/how-to-integrate-maps\">E2E Azure IoT Hub, Digital Twins and Indoor Map</a></li></ul><br><br> <b>People references:</b> <br> Blagoja Panovski <br> Kiril Todorovski"
+    },
+    {
+      "name": "Azure Maps",
+      "quadrant": "Platforms",
+      "ring": "assess",
+      "isNew": true,
+      "description": "Azure Maps is a collection of geospatial services and SDKs that use fresh mapping data to provide geographic context to web and mobile applications. <br><br> We've worked on end-2-end scenario as POC for a potential client and we're planning on continuing to build this scenario with devices in our MK office. More information on the link below. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://docs.microsoft.com/en-us/azure/azure-maps/about-azure-maps\">Overview of Azure Maps</a></li><li><a href=\"https://docs.microsoft.com/en-us/azure/digital-twins/how-to-integrate-maps\">E2E Azure IoT Hub, Digital Twins and Indoor Map</a></li></ul><br><br> <b>People references:</b> <br> Blagoja Panovski <br> Kiril Todorovski"
+    },
+    {
+      "name": "Solana",
+      "quadrant": "Platforms",
+      "ring": "assess",
+      "isNew": true,
+      "description": "Solana (SOL) is an open source project that aims to be the worlds first web-scale, high-performance, permission-less blockchain. Solana seeks to use a revolutionary innovation called Proof-of-History to remove performance bottlenecks, allowing transaction throughput to scale proportionally with network bandwidth. Solana enables developers to write on-chain programs in general purpose programming languages such as Rust or C, but those programs contain Solana-specific mechanisms. <br><br> We are looking for a way to assess building a dapp here - any ideas/volunteers are welcomed. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://docs.solana.com/introduction\">Introduction to Solana</a></li></ul><br><br> <b>People references:</b> <br> Kostadin Kadiev"
+    },
+
+    {
+      "name": "BurpSuite",
+      "quadrant": "Tools",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "Burp Suite Professional is one of the most popular penetration testing and vulnerability finder tools, and is often used for checking web application security. “Burp,” as it is commonly known, is a proxy-based tool used to evaluate the security of web-based applications and do hands-on testing. It also has a free, community edition that has limited capabilities. <br><br> We've used Burp Suite Professional on one of our projects successfully. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.softwaretestinghelp.com/burp-suite-tutorial/\">BurpSuite Tutorial</a></li></ul><br><br> <b>People references:</b> <br> Vasilka Krstevska"
+    },
+    {
+      "name": "JMeter",
+      "quadrant": "Tools",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "JMeter is a test tool from Apache used to analyze and measure the performance of applications, different software services and products. It is open source software entirely written in Java, used to test both web and FTP applications. <br><br> We've used JMeter for performance/load testing successfully on one of our projects. <br><br>  <b>Useful links:</b> <br> <ul><li><a href=\"https://www.tutorialspoint.com/jmeter/jmeter_quick_guide.htm/\">JMeter Quick Guide</a></li></ul><br><br> <b>People references:</b> <br> Aleksandra Angelovska"
+    },
+    {
+      "name": "SendGrid",
+      "quadrant": "Tools",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "SendGrid is a cloud-based SMTP provider that allows you to send email without having to maintain email servers. SendGrid manages all of the technical details, from scaling the infrastructure to ISP outreach and reputation monitoring to whitelist services and real time analytics. <br><br> We've successfully used SendGrid on multiple project in the company and it is the recommended way to do emails. <br><br>  <b>Useful links:</b> <br> <ul><li><a href=\"https://docs.sendgrid.com/for-developers\">SendGrid Docs</a></li></ul><br><br> <b>People references:</b> <br> Jovica Krstevski <br> Aleksandra Gjinovska"
+    },
+    {
+      "name": "Twillio SMS",
+      "quadrant": "Tools",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "Twilio SMS enables you to send and receive text messages over the carrier network to any phone, anywhere in the world. With phone numbers available in over 30 countries and competitive rates, Twilios inventory lets you pick the right numbers with the right capabilities for your project. Twilio handles ever-changing telecom logic and carrier specific rules to ensure your message reaches its destination. <br><br> We've successfully used Twillio SMS on one of our projects and it is the recommended way to implement SMS messaging. <br><br>  <b>Useful links:</b> <br> <ul><li><a href=\"https://www.twilio.com/sms\">Twillio Docs</a></li></ul><br><br> <b>People references:</b> <br> Bojan Stojkov"
+    },
+    {
+      "name": "RabbitMQ",
+      "quadrant": "Tools",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "RabbitMQ is an open source message broker software. It accepts messages from producers, and delivers them to consumers. It acts like a middleman which can be used to reduce loads and delivery times taken by web application server. <br><br> We've successfully used RabbitMQ on several projects within the company. Although free and can cover a lot of user cases, it can get hard to maintain. <br><br>  <b>Useful links:</b> <br> <ul><li><a href=\"https://www.cloudamqp.com/blog/part1-rabbitmq-for-beginners-what-is-rabbitmq.html\">What is RabbitMQ?</a></li></ul><br><br> <b>People references:</b> <br> Jovica Krstevski <br> Aleksandra Gjinovska"
+    },
+    {
+      "name": "Redis",
+      "quadrant": "Tools",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. The cache is the most common use case. <br><br> We've used it on several projects and it is a great tool to work with. It also has cloud adoptions. However, it stores all data in memory and therefor a high memory consumption. <br><br>  <b>Useful links:</b> <br> <ul><li><a href=\"https://medium.com/weekly-webtips/redis-what-and-why-pros-cons-ae2f5bc750fd\">Redis pros and cons</a></li></ul><br><br> <b>People references:</b> <br> Jovica Krstevski <br> Aleksandra Gjinovska"
+    },
+    {
+      "name": "BrowserStack",
+      "quadrant": "Tools",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "BrowserStack is an Indian cloud web and mobile testing platform that provides developers with the ability to test their websites and mobile applications across on-demand browsers, operating systems and real mobile devices. <br><br> We've used BrowserStack on one of our projects and its a good way to test your application in different kind of browsers. We also have subscription on BrowserStack as a company. <br><br>  <b>Useful links:</b> <br> <ul><li><a href=\"https://www.softwaretestinghelp.com/browserstack-tutorial/\">BrowserStack Tutorial</a></li></ul><br><br> <b>People references:</b> <br> Aleksandra Angelovska <br> Veneta Milosheva"
+    },
+    {
+      "name": "SonarQube",
+      "quadrant": "Tools",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "SonarQube is a Code Quality Assurance tool that collects and analyzes source code, and provides reports for the code quality of your project. It combines static and dynamic analysis tools and enables quality to be measured continually over time. <br><br> We're actively using SonarQube on several project to improve our code quality. We also have setup a company SonarQube that we can use for any project that currently doesn't use this tool. <br><br>  <b>Useful links:</b> <br> <ul><li><a href=\"https://www.crestdatasys.com/blogs/an-introduction-on-using-sonarqube/\">SonarQube Introduction</a></li></ul><br><br> <b>People references:</b> <br> Anastasija Jovanoska <br> Jovica Krstevski"
+    },
+    {
+      "name": "Postman",
+      "quadrant": "Tools",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "Postman is an application used for API testing. It is an HTTP client that tests HTTP requests, utilizing a graphical user interface, through which we obtain different types of responses that need to be subsequently validated. <br><br> We've successfully used Postman on multiple projects for API testing and test automation. <br><br>  <b>Useful links:</b> <br> <ul><li><a href=\"https://learning.postman.com/docs/getting-started/introduction/\">Postman Introduction</a></li></ul><br><br> <b>People references:</b> <br> Vasilka Krstevska <br> Veneta Milosheva <br> Aleksandra Angelovska"
+    },
+    {
+      "name": "Cypress",
+      "quadrant": "Tools",
+      "ring": "trial",
+      "isNew": false,
+      "description": "Cypress framework is a JavaScript-based end-to-end testing framework built on top of Mocha - a feature-rich JavaScript test framework running on and in the browser, making asynchronous testing simple and convenient. It also uses a BDD/TDD assertion library and a browser to pair with any JavaScript testing framework. <br><br> We've used Cypress successfully on some of our projects. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://skakarh.medium.com/advantages-and-disadvantages-of-cypress-end-to-end-testing-tool-before-choosing-it-as-your-347b6436dec8/\">Cypress pros and cons</a></li><li><a href=\"https://www.it-labs.com/e2e-test-components/\">E2E test components</a></li></ul><br><br> <b>People references:</b> <br> Veneta Milosheva"
+    },
+    {
+      "name": "Reflect",
+      "quadrant": "Tools",
+      "ring": "trial",
+      "isNew": true,
+      "description": "Reflect is cost-effective, zero-code, zero-installation tool for recording and executing UX tests that are also easier to run and maintain. <br><br> We've successfully used it on one of our projects. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://abstracta.us/blog/tools/reflect-review-the-new-automated-web-testing-tool/\">Reflect - tne new automation web testing tool</a></li></ul><br><br> <b>People references:</b> <br> Aleksandra Angelovska"
+    },
+    {
+      "name": "OWASP ZAP",
+      "quadrant": "Tools",
+      "ring": "trial",
+      "isNew": false,
+      "description": "The OWASP Zed Attack Proxy (ZAP) is one of the worlds most popular free security tools and is actively maintained by a dedicated international team of volunteers. It can help you automatically find security vulnerabilities in your web applications while you are developing and testing your applications. It's also a great tool for experienced pen testers to use for manual security testing. <br><br> We've used OWASP ZAP on some of our project with success, however since it is free it has limited capabilities. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.softwaretestinghelp.com/owasp-zap-tutorial/\">OWASP ZAP Tutorial</a></li></ul><br><br> <b>People references:</b> <br> Vasilka Krstevska <br> Veneta Milosheva <br> Aleksandra Angelovska"
+    },
+    {
+      "name": "Terraform",
+      "quadrant": "Tools",
+      "ring": "trial",
+      "isNew": false,
+      "description": "Terraform is an open-source infrastructure as code software tool that provides a consistent CLI workflow to manage hundreds of cloud services. Terraform codifies cloud APIs into declarative configuration files. <br><br> We've used Terraform on one of our projects and while it has benefits since you can have consistent IAC model in probable multi-cloud solution, it still needs to follow the Cloud provider updates, it needs to store the state files (this is also a security concern) and it has a steep learning curve. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://k21academy.com/terraform-iac/terraform-beginners-guide/\">Terraform Beginners Guide</a></li></ul><br><br> <b>People references:</b> <br> Blagoja Panovski <br> Kostadin Kadiev"
+    },
+    {
+      "name": "Sitespeed.io",
+      "quadrant": "Tools",
+      "ring": "trial",
+      "isNew": true,
+      "description": "Sitespeed.io is a set of Open Source tools that makes it easy to monitor and measure the performance of your web site. <br><br> We're currently working with this tool on one of our projects and after we have a clearer picture we plan to do a knowledge share session so that everyone can consider using it within their own projects. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://github.com/sitespeedio/sitespeed.io\">Sitespeed.io GitHub</a></li></ul><br><br> <b>People references:</b> <br> Voislav Mishevski"
+    },
+    {
+      "name": "Balsamiq Wireframes",
+      "quadrant": "Tools",
+      "ring": "trial",
+      "isNew": false,
+      "description": "Balsamiq Wireframes is a rapid wireframing tool that reproduces the experience of sketching on a whiteboard. <br><br> Balsamiq is a great option for rapid wireframing. You can quickly develop structure and layouts for your projects. The drag-and-drop elements make life easier and you can link buttons to other pages. However, there is no free pricing plan for this tool. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.tutorialspoint.com/balsamiq_mockups/balsamiq_mockups_quick_guide.htm\">Balsamic Wireframes Quick Guide</a></li></ul><br><br> <b>People references:</b> <br> Blagoja Panovski"
+    },
+    {
+      "name": "OData",
+      "quadrant": "Tools",
+      "ring": "trial",
+      "isNew": false,
+      "description": "Open Data Protocol (OData) is an open protocol that allows the creation and consumption of queryable and interoperable REST APIs in a simple and standard way. <br><br> We've used Odata on one of our projects successfully. If you have a simple database model it can be very good since you are getting a lot of APIs with little effort. However, it is not very suitable for complex relational data models. It also encourages poor development and API practices by providing a black-box framework to enforce a generic repository pattern. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.odata.org/getting-started/basic-tutorial/\">OData Basic Tutorial</a></li></ul><br><br> <b>People references:</b> <br> Anastasija Jovanoska <br> Bojan Stojkov <br> Blagoja Panovski"
+    },
+    {
+      "name": "Hangfire",
+      "quadrant": "Tools",
+      "ring": "trial",
+      "isNew": true,
+      "description": "Hangfire is a tool for an easy way to perform background processing in .NET and .NET Core applications. No Windows Service or separate process required, backed by persistent storage, open and free for commercial use. <br><br> We've successfully used Hangfire on one of our projects for background jobs. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.hangfire.io/\">Hangfire</a></li></ul><br><br> <b>People references:</b> <br> Anastasija Jovanoska"
+    },
+    {
+      "name": "LaunchDarkly",
+      "quadrant": "Tools",
+      "ring": "trial",
+      "isNew": true,
+      "description": "LaunchDarkly is a SaaS platform for developers to manage feature flags. By decoupling feature rollout and code deployment, LaunchDarkly enables developers to test their code live in production, gradually release features to groups of users, and manage flags throughout their entire lifecycle. <br><br> We've used this tool on one of our projects to manage feature flags - it is a very rich tool, with a lot of functionalities for something that is supposed to be pretty simple and it is not free to use. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://harness.io/blog/what-is-launchdarkly/\">What is LaunchDarkly?</a></li></ul><br><br> <b>People references:</b> <br> Miki Jovanovski <br> Voislav Mishevski"
+    },
+    {
+      "name": "Lens IDE",
+      "quadrant": "Tools",
+      "ring": "trial",
+      "isNew": true,
+      "description": "Lens IDE provides the full situational awareness for everything that runs in Kubernetes. It's lowering the barrier of entry for people just getting started and radically improving productivity for people with more experience. Lens IDE a standalone application for MacOS, Windows and Linux operating systems. <br><br> We've used Lens successfully on one of our projects to monitor all Kubernetes activities. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://github.com/lensapp/lens/\">Lens IDE</a></li></ul><br><br> <b>People references:</b> <br> Kostadin Kadiev"
+    },
+    {
+      "name": "Tesseract OCR",
+      "quadrant": "Tools",
+      "ring": "trial",
+      "isNew": false,
+      "description": "Tesseract OCR is an open source text recognition (OCR) Engine, available under the Apache 2.0 license. It can be used directly, or (for programmers) using an API to extract printed text from images. It supports a wide variety of languages. <br><br> We've successfully used this tool on one of our projects. It has some learning curve tho. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://github.com/tesseract-ocr/tesseract\">Tesseract OCR - GitHub</a></li></ul><br><br> <b>People references:</b> <br> Kostadin Kadiev"
+    },
+    {
+      "name": "Nx",
+      "quadrant": "Tools",
+      "ring": "assess",
+      "isNew": true,
+      "description": "Nx is a smart, fast and extensible build system. It comes with first class monorepo support and powerful integrations. Nx provides distributed graph-based task execution and computation caching. <br><br> We're currently exploring this possibility to assess this tool on one of our projects. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://github.com/nrwl/nx\">Nx - GitHub</a></li></ul><br><br> <b>People references:</b> <br> Kiril Zafirov <br> Kostadin Kadiev"
+    },
+
+    {
+      "name": ".NET",
+      "quadrant": "Languages and Frameworks",
+      "ring": "adopt",
+      "isNew": false,
+      "description": ".NET is a free, cross-platform, open source developer framework for building many different types of applications. With . NET, you can use multiple languages, editors, and libraries to build for web, mobile, desktop, games, and IoT. <br><br> One of the most used/adopted frameworks in our company. We are having projects with .NET Framework and also with .NET Core. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet\">What is .NET?</a></li></ul><br><br> <b>People references:</b> <br> Aleksandra Gjinovska <br> Blagoja Panovski <br> Miki Jovanovski"
+    },
+    {
+      "name": "C#",
+      "quadrant": "Languages and Frameworks",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "C# is a general-purpose, multi-paradigm programming language that encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based) and component-oriented programming disciplines. <br><br> One of the most used/adopted programming languages in our company. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.tutorialspoint.com/csharp/index.htm\">C# Tutorial</a></li></ul><br><br> <b>People references:</b> <br> Aleksandra Gjinovska <br> Blagoja Panovski <br> Miki Jovanovski"
+    },
+    {
+      "name": "Java",
+      "quadrant": "Languages and Frameworks",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers to write once, run anywhere, meaning that compiled Java code can run on all platforms that support Java without the need for recompilation. <br><br> One of the most used/adopted programming languages in our company. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.tutorialspoint.com/java/index.htm\">Java Tutorial</a></li></ul><br><br> <b>People references:</b> <br> Jovica Krstevski"
+    },
+    {
+      "name": "Spring Boot",
+      "quadrant": "Languages and Frameworks",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "Spring Boot is an open source Java-based framework used to create a Micro Service. It is developed by Pivotal Team. It is easy to create a stand-alone and production ready spring applications using Spring Boot. Spring Boot contains a comprehensive infrastructure support for developing a micro service and enables you to develop enterprise-ready applications that you can \"just run\". <br><br> We are using this framework successfully on some of our projects. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.tutorialspoint.com/spring_boot/index.htm\">Spring Boot Tutorial</a></li></ul><br><br> <b>People references:</b> <br> Jovica Krstevski"
+    },
+    {
+      "name": "Angular",
+      "quadrant": "Languages and Frameworks",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript. <br><br> One of the most used/adopted frameworks in our company. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://angular.io/guide/architecture\">Angular</a></li></ul><br><br> <b>People references:</b> <br> Voislav Mishevski <br> Kiril Zafirov"
+    },
+    {
+      "name": "React",
+      "quadrant": "Languages and Frameworks",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. <br><br> One of the most used/adopted libraries in our company. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://github.com/facebook/react\">React</a></li></ul><br><br> <b>People references:</b> <br> Voislav Mishevski"
+    },
+    {
+      "name": "TypeScript",
+      "quadrant": "Languages and Frameworks",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale. TypeScript is a superset of JavaScript that compiles to clean JavaScript output. <br><br> It is used a lot on our projects successfully. Our developers favor its minimal configuration management, well-integrated IDE support and its ability to refactor code safely and gradually adopt types. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html\">TypeScript in 5 minutes</a></li></ul><br><br> <b>People references:</b> <br> Voislav Mishevski <br> Kiril Zafirov"
+    },
+    {
+      "name": "Robot Framework",
+      "quadrant": "Languages and Frameworks",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "Robot Framework is a Python-based, extensible keyword-driven automation framework for acceptance testing, acceptance test driven development (ATDD), behavior driven development (BDD) and robotic process automation (RPA). It can be used in distributed, heterogeneous environments, where automation requires using different technologies and interfaces. There are lots of available keyword libraries for Robot Framework. <br><br> We've started using it on one of our project. Beside the UI tests we've successfully implemented DB checks thru API calls, sending emails etc. (using the appropriate library). <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#getting-started\">Robot Framework - getting started</a></li></ul><br><br> <b>People references:</b> <br> Vasilka Krstevska <br> Simona Stavreva"
+    },
+    {
+      "name": "Postman Wrapper",
+      "quadrant": "Languages and Frameworks",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "Postman Wrapper is an open source framework used for linking the Postman automated API tests with the Azure DevOps Test Cases. It uses the ADO Test Case ID for linking the test with. Each folder inside the Postman Collection is linked with a separate Test Case. <br><br> We've successfully used and adjusted the Postman Wrapper. Upon build each folder is automatically linked with respective ADO Test Case. There are separate release stages per product for running the tests. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://github.com/jbjakobs/Postman\">Postman Wrapper</a></li></ul><br><br> <b>People references:</b> <br> Vasilka Krstevska <br> Bojan Stojkov"
+    },
+    {
+      "name": "React Native",
+      "quadrant": "Languages and Frameworks",
+      "ring": "trial",
+      "isNew": false,
+      "description": "React Native is an open-source UI software framework created by Meta Platforms, Inc. It is used to develop applications for Android, Android TV, iOS, macOS, tvOS, Web, Windows and UWP by enabling developers to use the React framework along with native platform capabilities. <br><br> We've used React Native on one of our project successfully. It has a steep learning curve. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://blog.risingstack.com/a-definitive-react-native-guide-for-react-developers/\">React Native guide for developers</a></li></ul><br><br> <b>People references:</b> <br> Aleksandra Gjinovska"
+    },
+    {
+      "name": "Node.js",
+      "quadrant": "Languages and Frameworks",
+      "ring": "trial",
+      "isNew": false,
+      "description": "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser. <br><br> We've done some pet project in the past with Node.js. Recently, we've started working on several projects with Node.js backends. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://nodejs.dev/learn\">Learn Node.js</a></li><li><a href=\"https://github.com/IT-Labs/MEAN-Stack\">MEAN stack - GitHub</a></li></ul><br><br> <b>People references:</b> <br> Voislav Mishevski <br> Hristijan Tasevski <br> Kole Vasilevski"
+    },
+    {
+      "name": "Solidity",
+      "quadrant": "Languages and Frameworks",
+      "ring": "trial",
+      "isNew": false,
+      "description": "Solidity is an object-oriented, high-level language for implementing smart contracts. Smart contracts are programs which govern the behaviour of accounts within the Ethereum state. <br><br> We've used Solidity on one of our projects successfully. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://betterprogramming.pub/a-quick-guide-to-basic-solidity-for-developers-8cf17d327fe4\">Solidity Basic Guide</a></li></ul><br><br> <b>People references:</b> <br> Aleksandra Gjinovska"
+    },
+    {
+      "name": "Python",
+      "quadrant": "Languages and Frameworks",
+      "ring": "trial",
+      "isNew": false,
+      "description": "Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects. <br><br> We've used python on some of our pet project, mainly for ML and currently there is an ongoing Python/ML internship. We are looking to invest more in this language, not only for AI/ML, but for building backend services as well. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.learnpython.org/\">Learn Python</a></li><li><a href=\"https://github.com/IT-Labs/Computer-Vision\">Computer Vision - GitHub</a></li></ul><br><br> <b>People references:</b> <br> Vlatko Zmejkoski <br> Martin Trajkov"
+    },
+    {
+      "name": "Kotlin",
+      "quadrant": "Languages and Frameworks",
+      "ring": "assess",
+      "isNew": true,
+      "description": "Kotlin is a programming language introduced by JetBrains in 2011. This is a strongly statically typed general-purpose programming language that runs on JVM. In 2017, Google announced Kotlin is an official language for android development. Kotlin is an open source programming language that combines object-oriented programming and functional features into a unique platform. <br><br> We are looking for a project/pet project where we would be able to assess this programming language. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.infoworld.com/article/3224868/what-is-kotlin-the-java-alternative-explained.html\">Kotlin explained</a></li></ul><br><br> <b>People references:</b> <br> Jovica Krstevski <br> Kostadin Kadiev"
+    },
+    {
+      "name": "Blazor",
+      "quadrant": "Languages and Frameworks",
+      "ring": "assess",
+      "isNew": true,
+      "description": "Blazor is a .NET web framework using C#/Razor and HTML that runs in the browser with WebAssembly. It is being developed by Microsoft. <br><br> We already did a pet project/article on this framework, but are still waiting to try it on a project. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.it-labs.com/introduction-to-blazor/\">Introduction to Blazor</a></li><li><a href=\"https://github.com/IT-Labs/Blazor/\">Blazor - GitHub</a></li></ul><br><br> <b>People references:</b> <br> Blagoja Panovski <br> Martin Milutinovich"
+    },
+    {
+      "name": "Next.js",
+      "quadrant": "Languages and Frameworks",
+      "ring": "assess",
+      "isNew": true,
+      "description": "Next.js gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed. <br><br> We are looking for a pet project/POC to assess this framework. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://nextjs.org/learn/basics/create-nextjs-app/\">Create Next.js app</a></li></ul><br><br> <b>People references:</b> <br> Voislav Mishevski <br> Kostadin Kadiev"
+    },
+    {
+      "name": "Flutter",
+      "quadrant": "Languages and Frameworks",
+      "ring": "assess",
+      "isNew": true,
+      "description": "Flutter is Google's SDK for crafting beautiful, fast user experiences for mobile, web and desktop from a single codebase. Flutter works with existing code, is used by developers and organizations around the world, and is free and open source. Flutter apps are written in the Dart language and make use of many of the language's more advanced features. <br><br> We are looking for a pet project/POC in order to explore Flutter in more depth. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://invotech.co/blog/flutter-pros-cons-should-you-use-it-in-your-project/\">Flutter pros and cons</a></li></ul><br><br> <b>People references:</b> <br> Kostadin Kadiev <br> Miki Jovanovski"
     }
   ]
 }
