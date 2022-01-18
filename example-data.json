@@ -1,32 +1,265 @@
 {
   "title": "IT Labs Technology Radar",
-  "quadrants": ["Quad1", "Quad2", "Quad3", "Quad4"],
+  "quadrants": ["Techniques", "Platforms", "Tools", "Languages and Frameworks"],
   "rings": ["adopt", "trial", "assess", "hold"],
   "blips": [
     {
-      "name": "Go",
-      "quadrant": "Quad2",
-      "ring": "trial",
-      "isNew": true,
-      "description": "This is a simple description"
-    },
-    {
-      "name": "JavaScript",
-      "quadrant": "Quad1",
+      "name": "Microservices",
+      "quadrant": "Techniques",
       "ring": "adopt",
       "isNew": false,
-      "description": "<p>This is a description</p><p>Formatted into paragraphs</p>"
+      "description": "A microservices architecture consists of a collection of small, autonomous services. Each service is self-contained and should implement a single business capability within a bounded context. A bounded context is a natural division within a business and provides an explicit boundary within which a domain model exists.  <br> <br> We've successfully adopted this architectural style on several projects and while it has a lot of benefits, we should be careful with bringing the additional complexity to the system. Microservices should not be the default choice for architecture, mainly because many organizations and systems are lacking the foundations in terms of continuous delivery and infrastructure automation. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices/\">Microservices architecture style</a></li><li><a href=\"https://cloud.google.com/architecture/microservices-architecture-introduction\">Microservices architecture introduction</a></li></ul><br><br> <b>People references:</b> <br> Jovica Krstevski<br>Aleksandra Gjinovska"
     },
     {
+      "name": "Infrastructure as code",
+      "quadrant": "Techniques",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "Infrastructure as code is an approach where infrastructure configuration is scripted or described by files that are stored in version control, and changes are pushed out to the datacenter in a controlled manner. <br><br> Using this approach provides consistent and repeatable environment changes, reducing the manual effort involved, especially in troubleshooting environmental differences. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://docs.microsoft.com/en-us/devops/deliver/what-is-infrastructure-as-code\">What is Infrastrcture as code?</a></li><li><a href=\"https://stackify.com/what-is-infrastructure-as-code-how-it-works-best-practices-tutorials/\">IaC Best practices</a></li></ul><br><br> <b>People references:</b> <br> Blagoja Panovski <br> Kostadin Kadiev"
+    },
+    {
+      "name": "Pipelines as code",
+      "quadrant": "Techniques",
+      "ring": "adopt",
+      "isNew": true,
+      "description": "The pipelines as code technique emphasizes that the configuration of delivery pipelines that build, test and deploy our applications or infrastructure should be treated as code; they should be placed under source control and modularized in reusable components with automated testing and deployment. <br><br> We've adopted this technique on several projects and we strongly recommend to have this into consideration when planning to build any kind of CI/CD. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://harness.io/blog/pipeline-as-code/\">Pipelines as code</a></li></ul><br><br> <b>People references:</b> <br> Blagoja Panovski <br> Kostadin Kadiev"
+    },
+    {
+      "name": "Feature flags",
+      "quadrant": "Techniques",
+      "ring": "trial",
+      "isNew": false,
+      "description": "The idea behind feature flags is to build conditional feature branches into code in order to make logic available only to certain groups of users at a time. If the flag is “on,” new code is executed, if the flag is “off,” the code is skipped. <br> <br>By our experience, unless you need A/B testing or canary release or hand over feature release responsibility to the business, we encourage you to use the simplest possible feature toggle instead of unnecessarily complex feature toggle frameworks. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://martinfowler.com/articles/feature-toggles.html\">Feature toggles</a></li><li><a href=\"https://launchdarkly.com/blog/what-are-feature-flags/\">What are feature flags?</a></li></ul><br><br> <b>People references:</b> <br> Miki Jovanovski<br>Blagoja Panovski"
+    },
+    {
+      "name": "Event-Driven Architecture",
+      "quadrant": "Techniques",
+      "ring": "trial",
+      "isNew": false,
+      "description": "An event-driven architecture consists of event producers that generate a stream of events, and event consumers that listen for the events. Events are delivered in near real time, so consumers can respond immediately to events as they occur. Producers are decoupled from consumers — a producer doesn't know which consumers are listening. Consumers are also decoupled from each other, and every consumer sees all of the events.<br><br> While it provides great decoupling and high scalability, on the project's we've used brought a lot of challenges as well, like when to validate (before the event is raised or after), ordering of event handling, idempotency and complexity around event registration and handlers. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven\">Event-Driven architecture style</a></li><li><a href=\"https://aws.amazon.com/event-driven-architecture/\">What is an Event-Driven architecture</a></li></ul><br><br> <b>People references:</b> <br> Anastasija Jovanoska"
+    },
+    {
+      "name": "Serverless Architecture",
+      "quadrant": "Techniques",
+      "ring": "trial",
+      "isNew": false,
+      "description": "Serverless architecture replaces long-running virtual machines with ephemeral compute power that comes into existence on request and disappears immediately after use. This architecture can mitigate some security concerns such as security patching and SSH access control, and can make much more efficient use of compute resources. These systems cost very little to operate and can have inbuilt scaling features. <br><br> While all the benefits, this architecture style has a lot of challenges and is definitely not suitable for APIs (we've seen this with .NET and Java runtimes). The reason for this is mainly the startup latency (cold start), memory limits and execution duration. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://martinfowler.com/articles/serverless.html\">Serverless Architectures</a></li><li><a href=\"https://docs.microsoft.com/en-us/dotnet/architecture/serverless/serverless-architecture-considerations\">Serverless architecture considerations</a></li><li><a href=\"https://www.it-labs.com/going-serverless-choose-the-right-faas-solution/\">Choose the right FaaS solution</a></li></ul><br><br> <b>People references:</b> <br> Miki Jovanovski <br> Voislav Mishevski"
+    },
+    {
+      "name": "Microfrontends",
+      "quadrant": "Techniques",
+      "ring": "trial",
+      "isNew": false,
+      "description": "The idea behind Micro Frontends is to think about a website or web app as a composition of features which are owned by independent teams. Each team has a distinct area of business or mission it cares about and specializes in. A team is cross functional and develops its features end-to-end, from database to user interface. <br><br> Although we've used this on several projects, concerning is the tendency to use this architecture as an excuse to mix a range of competing technologies, tools or frameworks in a single page, leading to micro frontend anarchy. A particularly egregious form of this syndrome is using multiple frontend frameworks — for example, React.js and Angular — in the same \"single-page\" application. Although this might be technically possible, it is far from advisable when not part of a deliberate transition strategy. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://martinfowler.com/articles/micro-frontends.html\">Microfrontends</a></li></ul><br><br> <b>People references:</b> <br> Voislav Mishevski <br> Hristijan Tasevski <br> Kiril Zafirov"
+    },
+    {
+      "name": "Service mesh",
+      "quadrant": "Techniques",
+      "ring": "assess",
+      "isNew": true,
+      "description": "Service mesh is an approach to operating a secure, fast and reliable microservices ecosystem. It has been an important stepping stone in making it easier to adopt microservices at scale. It offers discovery, security, tracing, monitoring and failure handling. It provides these cross-functional capabilities without the need for a shared asset such as an API gateway or baking libraries into each service. A typical implementation involves lightweight reverse-proxy processes, aka sidecars, deployed alongside each service process in a separate container. Sidecars intercept the inbound and outbound traffic of each service and provide cross-functional capabilities mentioned above. <br><br>We are looking for a project/POC in order to assess this in more depth. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.nginx.com/blog/what-is-a-service-mesh/\">What is service mesh</a></li></ul><br><br> <b>People references:</b> <br> Kostadin Kadiev"
+    },
+    {
+      "name": "Architectural fitness function",
+      "quadrant": "Techniques",
+      "ring": "assess",
+      "isNew": true,
+      "description": "Borrowed from evolutionary computing, a fitness function is used to summarize how close a given design solution is to achieving the set aims. An architectural fitness function, as defined in Building Evolutionary Architectures, provides an objective integrity assessment of some architectural characteristics, which may encompass existing verification criteria, such as unit testing, metrics, monitors, and so on. <br><br> We've managed to have some fitness functions on some projects for code quality, but we are looking for a project/POC where we can assess this in more depth, so any volunteers for this initiative are welcomed. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.thoughtworks.com/insights/articles/fitness-function-driven-development\">Fitness function-driven development</a></li></ul><br><br> <b>People references:</b> <br> Kostadin Kadiev <br> Blagoja Panovski"
+    },
+    {
+      "name": "Remote mob programming",
+      "quadrant": "Techniques",
+      "ring": "assess",
+      "isNew": true,
+      "description": "Remote mob programming allows teams to quickly “mob” around an issue or piece of code without the physical constraints of only being able to fit so many people around a pairing station. Teams can quickly collaborate on an issue or piece of code using their video conferencing tool of choice without having to connect to a big display, book a physical meeting room or find a whiteboard. <br><br> We are looking for a volunteer team where we can assess the effectiveness of this approach. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.remotemobprogramming.org/\">Remote mob programming</a></li></ul><br><br> <b>People references:</b> <br> Kostadin Kadiev"
+    },
+    {
+      "name": "Four key metrics",
+      "quadrant": "Techniques",
+      "ring": "assess",
+      "isNew": true,
+      "description": "To measure software delivery performance, more and more organizations are turning to the four key metrics as defined by the DORA research program: change lead time, deployment frequency, mean time to restore (MTTR) and change fail percentage. This research and its statistical analysis have shown a clear link between high delivery performance and these metrics; they provide a great leading indicator for how a team, or even a whole delivery organization, is doing. <br><br> It is recommended to start using these measurements with the intention to reflect and learn. Before you start, consider taking the DORA quick check (link above). To assess this we would need a volunteer team. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.devops-research.com\">DORA DevOps research</a></li><li><a href=\"https://www.devops-research.com/quickcheck.html\">DORA DevOps quick checklist</a></li></ul><br><br> <b>People references:</b> <br> Kostadin Kadiev"
+    },
+    {
+      "name": "Deep Learning",
+      "quadrant": "Techniques",
+      "ring": "assess",
+      "isNew": true,
+      "description": "Deep Learning is a subfield of machine learning concerned with algorithms inspired by the structure and function of the brain called artificial neural networks. It's a technique that teaches computers to do what comes naturally to humans: learn by example. <br><br> We are planning to visit Deep Learning Specialization course on Coursera starting from February 2022. This is best course to learn, it is self-paced and anyone should feel free to join on this journey. Additionally, ML internship has begin in January 2022 and the plan is to continue investing in Ai and building an AI team within the company. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://machinelearningmastery.com/what-is-deep-learning/\">What is deep learning?</a></li><li><a href=\"https://www.coursera.org/specializations/deep-learning\">Deep learning specialization</a></li></ul><br><br> <b>People references:</b> <br> Kostadin Kadiev <br> Vlatko Zmejkoski <br> Martin Trajkov"
+    },
+
+    {
+      "name": "Azure Pipelines",
+      "quadrant": "Platforms",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "Azure Pipelines is a product of Azure DevOps that offers cloud-based solutions to implement pipelines as code for projects hosted in Azure DevOps Git server or other Git solution such as GitHub or Bitbucket. The interesting part of this solution is the ability to run your scripts in Linux, MacOS and Windows agents without the overhead of managing a virtual machine on your own. <br><br> We've successfully used Azure Pipelines on multiple projects across the company, It is a mature platform, offering agents, artifacts, a lot of options and it is constantly upgraded by Microsoft. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops\">Azure Pipelines</a></li></ul><br><br> <b>People references:</b> <br> Kostadin Kadiev <br> Blagoja Panovski"
+    },
+    {
+      "name": "Jenkins",
+      "quadrant": "Platforms",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "Jenkins is an open source automation server which enables developers around the world to reliably build, test, and deploy their software. <br><br> We've used Jenkins on multiple projects within the company. Although it can be very useful, it is open source and free, it can become difficult to maintain with all it's plugins. However, we should be careful, because Jenkins continues to model pipelines using plugins and fails to change the core Jenkins product to model pipelines directly, which is better as we've seen with other platforms. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.jenkins.io/doc/tutorials/\">Jenkins Tutorial</a></li></ul><br><br> <b>People references:</b> <br> Jovica Krstevski <br> Aleksandra Gjinovska"
+    },
+    {
+      "name": "Azure App Service",
+      "quadrant": "Platforms",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite language, be it .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python. Applications run and scale with ease on both Windows and Linux-based environments. <br><br> Our experience with Azure App Services is great - it not only adds the power of Microsoft Azure to your application, such as security, load balancing, autoscaling, and automated management, but also you can also take advantage of its DevOps capabilities, such as continuous deployment from Azure DevOps, GitHub, Docker Hub, and other sources, package management, staging environments, custom domain and TLS/SSL certificates. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://docs.microsoft.com/en-us/azure/app-service/overview/\">Azure App Service Overview</a></li></ul><br><br> <b>People references:</b> <br> Blagoja Panovski <br> Bojan Stojkov"
+    },
+    {
+      "name": "Azure Functions",
+      "quadrant": "Platforms",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "Azure Functions is a cloud service available on-demand that provides all the continually updated infrastructure and resources needed to run your applications. You focus on the pieces of code that matter most to you, and Functions handles the rest. Functions provides serverless compute for Azure. You can use Functions to build web APIs, respond to database changes, process IoT streams, manage message queues etc. <br><br> We've had a lot of experience with Azure Functions (and Azure Durable functions that are orchestrating other functions) on one of our projects. It has certain challenges around networking, memory consumption, cold starts, but it still provides a great way to build your infrastructure - they are the usually the pipes moving data between different Azure services. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.serverless360.com/azure-functions\">Azure Functions Ultimate Guide</a></li></ul><br><br> <b>People references:</b> <br> Blagoja Panovski <br> Bojan Stojkov"
+    },
+    {
+      "name": "Azure SQL Database",
+      "quadrant": "Platforms",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "Azure SQL Database is a fully managed platform as a service (PaaS) database engine that handles most of the database management functions such as upgrading, patching, backups, and monitoring without user involvement. Azure SQL Database is always running on the latest stable version of the SQL Server database engine and patched OS with 99.99% availability. <br><br> We've used this on multiple projects successfully and it is a recommended approach for SQL Server infrastructure. However, please check the limitations if you're using some specific feature like cross-DB queries etc. before you move your infrastructure to the Cloud. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://docs.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview\">Azure SQL Database Overview</a></li></ul><br><br> <b>People references:</b> Kostadin Kadiev <br> Blagoja Panovski"
+    },
+    {
+      "name": "AWS Lambda",
+      "quadrant": "Platforms",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "AWS Lambda is a serverless computing service provided by Amazon Web Services (AWS). Users of AWS Lambda create functions, self-contained applications written in one of the supported languages and runtimes, and upload them to AWS Lambda, which executes those functions in an efficient and flexible manner. <br><br> We've used Lambdas on several projects and we can freely say that they are becoming better since AWS is investing a lot in them. However, we should be careful for which purpose are we using them due to their disadvantages like cold start, package & memory limits and cost. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.serverless.com/aws-lambda\">AWS Lambda Ultimate Guide</a></li><li><a href=\"https://www.it-labs.com/provisioned-concurrency-for-aws-lambda-functions/\">Provisioned concurrency for AWS Lambda</a></li></ul><br><br> <b>People references:</b> Miki Jovanovski <br> Voislav Mishevski"
+    },
+    {
+      "name": "AWS OpenSearch (ElasticSearch)",
+      "quadrant": "Platforms",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "Amazon OpenSearch Service (successor to Amazon Elasticsearch Service) is a managed service that makes it easy to deploy, operate, and scale OpenSearch clusters in the AWS Cloud. Amazon OpenSearch Service supports OpenSearch and legacy Elasticsearch OSS. When you create a cluster, you have the option of which search engine to use. <br><br> We've been using this on one of our projects with great success, but we need to be careful around costs vs using a standalone ElasticSearch instance (i.e. on EC2). <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html\">What is AWS OpenSearch?</a></li></ul><br><br> <b>People references:</b> <br> Jovica Krstevski <br> Miki Jovanovski"
+    },
+    {
+      "name": "AWS ElastiCache",
+      "quadrant": "Platforms",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "Amazon ElastiCache is a fully managed, in-memory caching service supporting flexible, real-time use cases. You can use ElastiCache for caching, which accelerates application and database performance, or as a primary data store for use cases that don't require durability like session stores, gaming leaderboards, streaming, and analytics. ElastiCache is compatible with Redis and Memcached. <br><br> As fully-managed AWS service it has a lot of benefits for the application's performance and it is has high availability and scalability, however it lack integration with data outside AWS and it has high costs. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.cloudzero.com/blog/amazon-elasticache\">Amazon Elasticache</a></li></ul><br><br> <b>People references:</b> <br> Miki Jovanovski <br> Jovica Krstevski"
+    },
+    {
+      "name": "MongoDB",
+      "quadrant": "Platforms",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. <br><br> MongoDB is far and away the most popular of the NoSQL databases. Its document data model gives developers great flexibility, while its distributed architecture allows for great scalability. We've used it successfully on several projects. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.percona.com/blog/pros-and-cons-when-you-should-and-should-not-use-mongodb/\">MongoDB Pros and Cons</a></li></ul><br><br> <b>People references:</b> <br> Jovica Krstevski <br> Bojan Stojkov"
+    },
+    {
+      "name": "PostgreSQL",
+      "quadrant": "Platforms",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "PostgreSQL is an enterprise-class open source database management system. It supports both SQL and JSON for relational and non-relational queries for extensibility and SQL compliance. PostgreSQL supports advanced data types and performance optimization features, which are only available in expensive commercial databases, like Oracle and SQL Server. <br><br> We've used it successfully on several projects. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.guru99.com/introduction-postgresql.html\">PostgreSQL Introduction</a></li></ul><br><br> <b>People references:</b> <br> Jovica Krstevski <br> Aleksandra Gjinovska"
+    },
+    {
+      "name": "SQL Server",
+      "quadrant": "Platforms",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "The SQL Server is a relational database management system from Microsoft. The system is designed and built is to manage and store information. The system supports various business intelligence operations, analytics operations, and transaction processing. <br><br> We are using SQL Server on several project and apart from it's cost and licensing, it provides a lot of flexibility, an abundance of functionalities and opportunities and it is considered as the best RDBMS. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.rothmobot.com/the-advantages-and-disadvantages-of-microsoft-sql-server/\">Microsoft SQL Server Advantages and Disadvantages</a></li></ul><br><br> <b>People references:</b> <br> Kostadin Kadiev <br> Aleksandra Gjinovska"
+    },
+    {
+      "name": "Bitbucket Pipelines",
+      "quadrant": "Platforms",
+      "ring": "trial",
+      "isNew": false,
+      "description": "Bitbucket Pipelines is an integrated CI/CD service built into Bitbucket. It allows you to automatically build, test, and even deploy your code based on a configuration file in your repository. <br><br> We've used this on one of our projects and it seems to have a bit limited experience. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://blog.knoldus.com/an-introduction-to-bitbucket-pipeline/\">Introduction to Bitbucket Pipelines</a></li></ul><br><br> <b>People references:</b> <br> Miki Jovanovski"
+    },
+    {
+      "name": "Kubernetes",
+      "quadrant": "Platforms",
+      "ring": "trial",
+      "isNew": false,
+      "description": "Kubernetes (K8s) is an open-source system for automating deployment, scaling, and management of containerized applications. It enables easy deployment and management of applications with microservice architecture. Additionally, it provides a framework to run distributed systems resiliently with great predictability. <br><br> We've used Kubernetes on several projects and the experience was good. The Cloud providers are offering managed solutions where we only need to care about our application and all administration is out-of-the-box. It has quickly become the default solution for most of our clients when deploying containers into a cluster of machines. However, it requires good management of resources and we need to be careful especially when multiple independent apps are running in the same Kubernetes cluster. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.it-labs.com/why-is-kubernetes-more-than-a-container-orchestration-platform/\">Why Kubernetes is more than a container orchestration platform?</a></li></ul><br><br> <b>People references:</b> <br> Kostadin Kadiev"
+    },
+    {
+      "name": "Azure Logic Apps",
+      "quadrant": "Platforms",
+      "ring": "trial",
+      "isNew": true,
+      "description": "Azure Logic Apps is a cloud-based platform for creating and running automated workflows that integrate your apps, data, services, and systems. With this platform, you can quickly develop highly scalable integration solutions for your enterprise and business-to-business (B2B) scenarios. <br><br> We're currently working with Logic Apps on one of our projects. It helps to coordinate the flow of data through disparate systems. Logic Apps works best when you’re integrating multiple services with some added control logic. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.serverless360.com/azure-logic-apps\">Azure Logic Apps Ultimate Guide</a></li></ul><br><br> <b>People references:</b> <br> Zoran Petrushev <br> Kostadin Kadiev"
+    },
+    {
+      "name": "AWS Cognito",
+      "quadrant": "Platforms",
+      "ring": "trial",
+      "isNew": false,
+      "description": "Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily. Amazon Cognito scales to millions of users and supports sign-in with social identity providers, such as Apple, Facebook, Google, and Amazon, and enterprise identity providers via SAML 2.0 and OpenID Connect. <br><br> We've used Cognito successfully on several projects and it is a good choice for quick implementation of your user authentication, however if your application does not use AWS, connecting it with 3rd party services will take time and requires customization. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://withintent.com/blog/the-pros-and-cons-of-using-aws-cognito-for-user-authentication-in-web-and-mobile-apps/\">AWS Cognito Pros and Cons</a></li><li><a href=\"https://www.it-labs.com/there-is-no-need-to-reinvent-the-wheel-for-user-identity-management/\">There is no need to reinvent the wheel for user identity managament</a></li></ul><br><br> <b>People references:</b> <br> Miki Jovanovski <br> Aleksandra Gjinovska"
+    },
+    {
+      "name": "AWS DynamoDB",
+      "quadrant": "Platforms",
+      "ring": "trial",
+      "isNew": false,
+      "description": "DynamoDB is a key-value and document database with single-digit millisecond response times at any scale. It’s a fully managed durable database with built-in security, backup, and restore capabilities. <br><br> We've used DynamoDB on one project and it offers a lot of benefits. However, we should be careful with the cost and the weak querying model. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://dashbird.io/blog/ultimate-guide-to-aws-dynamodb/\">AWS DynamoDB Ultimate Guide</a></li></ul><br><br> <b>People references:</b> <br> Miki Jovanovski <br> Voislav Mishevski"
+    },
+    {
+      "name": "AWS API Gateway",
+      "quadrant": "Platforms",
+      "ring": "trial",
+      "isNew": false,
+      "description": "Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. <br><br> We've used this service on one of our projects and while it has a lot of benefits, it also adds latency to all your API calls. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.serverless.com/guides/amazon-api-gateway/\">AWS API Gateway Ultimate Guide</a></li></ul><br><br> <b>People references:</b> <br> Miki Jovanovski"
+    },
+    {
+      "name": "AWS Kafka",
+      "quadrant": "Platforms",
+      "ring": "trial",
+      "isNew": false,
+      "description": "Apache Kafka is a distributed data store optimized for ingesting and processing streaming data in real-time. Streaming data is data that is continuously generated by thousands of data sources, which typically send the data records in simultaneously. <br><br> We've used this service on one of our projects and while it has a lot of benefits it is hard to troubleshoot. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.siliconvalleycloudit.com/apache-kafka-vs-amazon-managed-streaming/\">Apache Kafka vs Amazon managed streaming</a></li></ul><br><br> <b>People references:</b> <br> Jovica Krstevski"
+    },
+    {
+      "name": "Amazon Kinesis",
+      "quadrant": "Platforms",
+      "ring": "trial",
+      "isNew": false,
+      "description": "Amazon Kinesis makes it easy to collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information. Amazon Kinesis offers key capabilities to cost-effectively process streaming data at any scale, along with the flexibility to choose the tools that best suit the requirements of your application. <br><br> We've successfully used this service on one of our projects. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.contino.io/insights/amazon-kinesis\">Amazon Kinesis</a></li></ul><br><br> <b>People references:</b> <br> Jovica Krstevski <br> Miki Jovanovski"
+    },
+    {
+      "name": "AWS Redshift",
+      "quadrant": "Platforms",
+      "ring": "trial",
+      "isNew": false,
+      "description": "Amazon Redshift uses SQL to analyze structured and semi-structured data across data warehouses, operational databases, and data lakes, using AWS-designed hardware and machine learning to deliver the best price performance at any scale. <br><br> We've successfully used this service on one of our projects, but we need to be careful with the cost. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://sarasanalytics.com/blog/pros-and-cons-of-amazon-redshift\">Amazon Redshift pros and cons</a></li></ul><br><br> <b>People references:</b> <br> Jovica Krstevski"
+    },
+    {
+      "name": "AWS Eventbridge",
+      "quadrant": "Platforms",
+      "ring": "trial",
+      "isNew": false,
+      "description": "Amazon EventBridge is a serverless event bus that makes it easier to build event-driven applications at scale using events generated from your applications, integrated Software-as-a-Service (SaaS) applications, and AWS services. <br><br> We've successfully used this service on one of our projects. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://markn.ca/2020/building-event-driven-applications-with-amazon-eventbridge/\">Building event-driven app with Amazon Eventbridge</a></li></ul><br><br> <b>People references:</b> <br> Miki Jovanovski"
+    },
+    {
+      "name": "Cloudinary",
+      "quadrant": "Platforms",
+      "ring": "trial",
+      "isNew": false,
+      "description": "Cloudinary is an end-to-end image- and video-management solution for websites and mobile apps, covering everything from image and video uploads, storage, manipulations, optimizations to delivery. <br><br> We've used it successfully on one of our projects. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://cloudinary.com/documentation/how_to_integrate_cloudinary\">How to integrate with Cloudinary</a></li></ul><br><br> <b>People references:</b> <br> Jovica Krstevski"
+    },
+    {
+      "name": "Etherium",
+      "quadrant": "Platforms",
+      "ring": "trial",
+      "isNew": false,
+      "description": "Ethereum is open source and used primarily to support the second-largest cryptocurrency in the world known as Ether. Ethereum enables the smart contracts and applications built on its blockchain to run smoothly without fraud, downtime, control, or any third-party interference. <br><br> We've used Etherium on one of our projects successfully. The platform has a lot of potential and community and they are constantly trying to solve the blockchain scalability & cost issues. <br><br> <b>Useful links:</b> <br> <ul><li><a href=\"https://www.leewayhertz.com/what-is-ethereum-blockchain/\">What is Etherium blockchain?</a></li><li><a href=\"https://www.it-labs.com/portfolio/caerus-connections/\">Caerus Connections Portfolio</a></li></ul><br><br> <b>People references:</b> <br> Aleksandra Gjinovska"
+    },
+
+    {
       "name": "Java",
-      "quadrant": "Quad3",
+      "quadrant": "Tools",
       "ring": "assess",
       "isNew": false,
       "description": "This is a <a href=\"/\">description</a><br /><br />Spanning several lines."
     },
     {
       "name": "C++",
-      "quadrant": "Quad4",
+      "quadrant": "Languages and Frameworks",
       "ring": "hold",
       "isNew": false,
       "description": "This is another simple description"
