@@ -1,5 +1,5 @@
 {
-  "title": "IT Labs Technology Radar",
+  "title": "Technology Radar",
   "quadrants": ["Techniques", "Platforms", "Tools", "Languages and Frameworks"],
   "rings": ["adopt", "trial", "assess", "hold"],
   "blips": [
