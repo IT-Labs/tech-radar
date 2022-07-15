@@ -6,6 +6,7 @@
   "bin": "./bin/tech-radar-generator",
   "scripts": {
     "dev": "webpack-dev-server",
+    "build": "webpack",
     "test": "istanbul cover jasmine",
     "test:e2e": "jasmine --config=e2e.json",
     "lint": "standard",

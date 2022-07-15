@@ -110,7 +110,7 @@ module.exports = {
           loader: require.resolve('val-loader'),
           options: {
             // This is only used by webpack-dev-server, and is overridden in index.js
-            data: require('./example-data.json')
+            data: require('./itl-tech-radar-data.json')
           }
         }
       }
