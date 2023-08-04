@@ -168,7 +168,7 @@ header {
     .search-radar {
       border: 1px solid #aaa;
       background-color: inherit;
-      background-image: url("../images/search-logo-2x.svg");
+      background-image: url("/images/search-logo-2x.svg");
       background-repeat: no-repeat;
       background-position: 10px;
     }
@@ -183,13 +183,19 @@ header {
 .ui-autocomplete {
   width: 275px !important;
 
+  .ui-autocomplete-quadrant {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px;
+  }
+
   .ui-menu-item {
     white-space: normal;
     font-size: 14px;
     font-weight: 400;
 
     .ui-menu-item-wrapper {
-      padding: 5px 10px;
+      padding: 0 10px;
     }
   }
 }
